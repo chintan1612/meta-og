@@ -8,7 +8,7 @@ export default function handler(req) {
     const { searchParams } = new URL(req.url);
     const hasTitle = searchParams.has("title");
     const hasImageUrl = searchParams.has("imageUrl");
-    const title = hasTitle ? searchParams.get("title") : "#BITMATIC ART";
+    const title = hasTitle ? searchParams.get("title") : "#BITMATIC ART TEST";
     const imageUrl = hasImageUrl
         ? searchParams.get("imageUrl")
         : "https://hextoymedia.s3.us-east-1.amazonaws.com/collections/lows/86204875-32e0-4e58-a702-0f55a1befffa-1718267220803";
