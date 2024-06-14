@@ -6,7 +6,7 @@ export const config = {
 
 export default function handler(req) {
     const { searchParams } = new URL(req.url);
-    const DOMAIN = "https://meta-psi-five.vercel.app";
+    const DOMAIN = "https://meta-og.vercel.app/";
     const hasTitle = searchParams.has("title");
     const hasImageUrl = searchParams.has("imageUrl");
     const title = hasTitle ? searchParams.get("title") : "#BITMATIC ART";
